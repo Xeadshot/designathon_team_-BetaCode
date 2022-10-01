@@ -1,18 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 header img {
     height: 50px;
     margin-left: 25px;
+    
 }
 
 body {
     height: 125vh;
     background-size: cover;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 80px;
     padding: 30px;
-}
-
-main {
-    color: black;
 }
 
 header {
@@ -32,7 +31,11 @@ header * {
 }
 
 header p {
-    color: black;
+    color: #bbd7e4;
+    text-decoration: none;
+}
+header h1 {
+    color: #bbd7e4;
     text-decoration: none;
 }
 
@@ -41,7 +44,7 @@ header li {
 }
 
 header li a {
-    color: black;
+    color: #bbd7e4;
     text-decoration: none;
 }
 
@@ -53,7 +56,6 @@ header li a {
     margin: auto 2%;
 }
 
-/* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -69,3 +71,7 @@ header li a {
 .container h1 {
     font-size: 7rem;
 } 
+
+.NewPatient {
+    border: 1px;
+}
