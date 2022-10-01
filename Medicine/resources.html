@@ -1,24 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        div a {
+            margin: 1%;
+            float: right;
+        }
+
+        div a:link,
+        a:visited {
+            background-color: white;
+            color: black;
+            border: 2px solid #449EC8;
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        div a:hover,
+        a:active {
+            background-color: #449EC8;
+            color: white;
+        }
+
+        header a {
+            color: #bbd7e4;
+        }
+    </style>
 </head>
+
 <body>
-        <header>
-            <img src="assets/hospitalLogo.png">
-            <nav>
-                <p>hospital_name</p>
-                <ul>
-                    <li><a href="index.html">Dashboard</a></li>
-                    <li><a href="patients.html">Patients</a></li>
-                    <li><a href="">Resources</a></li>
-                </ul>
-            </nav>
-        </header>
-    
+    <header>
+        <img src="assets/hospitalLogo.png">
+        <nav>
+            <h1><b>Multispeciality Hospital</b></h1>
+            <ul>
+                <li><a href="index.html" style="color:#bbd7e4">Dashboard</a></li>
+                <li><a href="" style="color:#bbd7e4">Patients</a></li>
+                <li><a href="resources.html" style="color:#bbd7e4">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <a class="NewPatient" href="NewOrder.html">Order Resources</a>
+        <h1>Resources data</h1>
+        <table border="2" cellspacing="0" cellpadding="40">
+
+            <tr rowspan="4">
+                <td>S.no</td>
+                <td>Resource Name</td>
+                <td>Quantity</td>
+                <td>Date ordered</td>
+                <td>Price per piece</td>
+                <td>Use</td>
+                <td>Reciepts</td>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="reciept.html">Reciepts</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="reciept.html">Reciepts</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="reciept.html">Reciepts</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="reciept.html">Reciepts</a></td>
+            </tr>
+        </table>
+    </div>
+
+
 </body>
+
 </html>

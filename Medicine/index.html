@@ -7,7 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Management</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        form b,
+        input {
+            padding: 5px;
+            margin: 15px;
+        }
+
+        .submit {
+            background-color: white;
+            color: black;
+            border: 2px solid #449EC8;
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
 </head>
+
 
 <body>
     <header>
@@ -19,35 +38,54 @@
                 <li><a href="patients.html">Patients</a></li>
                 <li><a href="resources.html">Resources</a></li>
             </ul>
+            <div class="rightAlign">
+                <img src="" alt="UserProfile">
+                <p>Hello User</p>
+            </div>
         </nav>
     </header>
-    <div>
-        <div class="card">
-            <div class="container Today">
-                <h1><b>64</b></h1>
-                <p>Consultations for Today</p>
+    <center>
+        <div style="color: #2F7EA1;">
+            <div class="card">
+                <div class="container Today">
+                    <h1><b>64</b></h1>
+                    <p>Consultations for Today</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="container yesterday">
+                    <h1><b>105</b></h1>
+                    <p>Consultations Yesterday</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="container renew">
+                    <h1><b>21</b></h1>
+                    <p>Resources for Renewal</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="container extra">
+                    <h1><b>14</b></h1>
+                    <p>Already Placed Orders</p>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <div class="container yesterday">
-                <h1><b>64</b></h1>
-                <p>Consultations Yesterday</p>
-            </div>
+        <hr color="white" style="padding: 16px;">
+        <h1>Book an Appointment</h1>
+        <div class="appointment">
+            <form action="submit">
+                <b>Name:&nbsp</b><input type="text" placeholder="Enter Name">
+                <b>Date of birth:&nbsp</b><input type="date" placeholder="Enter Age"><br>
+                <b>Gender:&nbsp</b><input type="text" placeholder="Male/Female">
+                <b>Blood Group:&nbsp</b><input type="text" placeholder="Enter BG"><br>
+                <b>Mobile No.:&nbsp</b><input type="text" placeholder="Enter Mobile No.">
+                <b>Past reports:&nbsp</b><input type="file" id="myFile" name="filename"><br>
+                <b>Photo ID:&nbsp</b><input type="file" id="myFile" name="filename"><br>
+                <input class="submit" type="submit">
+            </form>
         </div>
-        <div class="card">
-        <div class="container renew">
-            <h1><b>64</b></h1>
-            <p>Resources for Renewal</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="container extra">
-            <h1><b>64</b></h1>
-            <p>Consultations for Today</p>
-        </div>
-    </div>
-    </div>
-    </div>
+    </center>
 
 </html>
 </body>

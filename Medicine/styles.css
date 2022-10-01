@@ -54,6 +54,7 @@ header li a {
     transition: 0.3s;
     border-radius: 5px;
     margin: auto 2%;
+    
 }
 
 .card:hover {
@@ -74,4 +75,15 @@ header li a {
 
 .NewPatient {
     border: 1px;
+}
+
+.renew h1 b {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 5%;
+
+}
+
+.rightAlign {
+    margin-left: 550px;
 }
